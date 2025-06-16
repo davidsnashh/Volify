@@ -1,0 +1,11 @@
+# save_file.py
+
+def save_file(filename, content):
+    with open(filename, 'w') as file:
+        file.write(content)
+    print(f"File '{filename}' has been saved.")
+
+if __name__ == "__main__":
+    content = "Hello, this is the content saved to the file."
+    filename = "output.txt"
+    save_file(filename, content)
